@@ -8,8 +8,7 @@
 	font-family: "MulgraveW00";
 	src: url("./assests/fonts/MulgraveW00-Regular.eot");
 	src: local("Mulgrave W00 Regular"), local("MulgraveW00-Regular"),
-		url("./assests/fonts/MulgraveW00-Regular.eot?#iefix")
-			format("embedded-opentype"),
+		url("./assests/fonts/MulgraveW00-Regular.eot?#iefix") format("embedded-opentype"),
 		url("./assests/fonts/MulgraveW00-Regular.woff2") format("woff2"),
 		url("./assests/fonts/MulgraveW00-Regular.woff") format("woff"),
 		url("./assests/fonts/MulgraveW00-Regular.ttf") format("truetype");
@@ -26,13 +25,11 @@
 }
 
 .colored {
-	background: linear-gradient(
-		275.05deg,
-		#fcce76 2.82%,
-		#ff4d00 32.83%,
-		#fcce76 62.53%,
-		#ff4d00 92.23%
-	);
+	background: linear-gradient(275.05deg,
+			#fcce76 2.82%,
+			#ff4d00 32.83%,
+			#fcce76 62.53%,
+			#ff4d00 92.23%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
@@ -51,12 +48,10 @@
 	font-weight: 500;
 	cursor: pointer;
 	transition: 0.5s all;
-	background: linear-gradient(
-		91.32deg,
-		#ff4d00 4.19%,
-		#fcce76 50.94%,
-		#ff4d00 100%
-	);
+	background: linear-gradient(91.32deg,
+			#ff4d00 4.19%,
+			#fcce76 50.94%,
+			#ff4d00 100%);
 	background-size: 400px 100px;
 	background-position: left top;
 	border-radius: 50px;
@@ -336,7 +331,7 @@ body {
 
 .section-2 {
 	/* color: rgba(200, 200, 200, 0.8); */
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	background: #0f0d09;
 	box-shadow: 0px -10px 40px 50px #0f0d09;
 	width: 100%;
@@ -360,14 +355,15 @@ body {
 	justify-items: space-evenly;
 	align-items: center;
 	max-width: 100%;
-	border: 1px solid blue;
+	/* border: 1px solid blue; */
 	padding: 0 80px;
 }
 
 .section-2 .Our_guests_ImagesDiv {
 	/* position: relative; */
 	width: 20%;
-	border: 1px solid pink;
+	padding: 2px;
+	/* border: 1px solid pink; */
 }
 
 .section-2 .image_Our_guest {
@@ -375,6 +371,21 @@ body {
 	width: 100%;
 	/* top: 20px; */
 }
+
+.img_name_div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	position: relative;
+	width: 100%;
+	height: 70px;
+	top: -70px;
+	background: rgba(0, 0, 0, 0.75);
+	box-shadow: 0px -30px 50px rgba(0, 0, 0, 0.75);
+	border-radius: 0px 0px 20px 20px;
+}
+
 
 .section-2 .image_Our_guest2 {
 	width: 100%;
