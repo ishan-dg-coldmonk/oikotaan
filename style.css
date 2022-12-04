@@ -331,18 +331,28 @@ body {
 
 .section-2 {
 	/* color: rgba(200, 200, 200, 0.8); */
-	/* border: 1px solid red; */
+	border: 0px solid red;
 	background: #0f0d09;
 	box-shadow: 0px -10px 40px 50px #0f0d09;
 	width: 100%;
 }
 
-.section-2 .Our_guests_header {
+.section-2 .part {
+	display: flex;
+	justify-items: flex-start;
+	flex-direction: column;
+	align-items: flex-start;
+	max-width: 100%;
+	border: 0px solid blue;
+	padding: 0 80px;
+}
+
+.section-2 .part .heading {
 	color: #ffffff;
 	height: 3rem;
 	width: 100%;
 	max-width: 76rem;
-	margin-left: 80px;
+	/* margin-left: 80px; */
 	/* margin-right: auto; */
 	font-family: "Island Moments", cursive;
 	font-size: 4.5rem;
@@ -350,51 +360,169 @@ body {
 	margin-bottom: 2rem;
 }
 
-.section-2 .Component_our_guest {
+.section-2 .part .content {
 	display: flex;
 	justify-items: space-evenly;
+	flex-direction: row;
 	align-items: center;
 	max-width: 100%;
-	/* border: 1px solid blue; */
-	padding: 0 80px;
+	border: 0px solid red;
+	padding: 0 0px;
 }
 
-.section-2 .Our_guests_ImagesDiv {
-	/* position: relative; */
+.section-2 .part .content .image-container {
+	position: relative;
 	width: 20%;
 	padding: 2px;
-	/* border: 1px solid pink; */
+	border: 0px solid pink;
+	overflow: hidden;
 }
 
-.section-2 .image_Our_guest {
+.section-2 .part .content .image-container .image_Our_guest {
 	/* height: 301px; */
+	border: 0px solid yellow;
 	width: 100%;
 	/* top: 20px; */
 }
 
-.img_name_div {
+.section-2 .part .content .image-container .img_name_div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: white;
-	position: relative;
+	position: absolute;
 	width: 100%;
 	height: 70px;
-	top: -70px;
+	bottom: 0px;
 	background: rgba(0, 0, 0, 0.75);
-	box-shadow: 0px -30px 50px rgba(0, 0, 0, 0.75);
-	border-radius: 0px 0px 20px 20px;
+	box-shadow: 0px -20px 20px 10px rgba(0, 0, 0, 0.75);
+	border-radius: 0px 0px 15px 15px;
 }
 
-
-.section-2 .image_Our_guest2 {
+.section-2 .part .content .image-container .image_Our_guest2 {
 	width: 100%;
 }
 
-.section-2 .vector_6 {
+.vector-straight {
 	margin-left: 160px;
 }
 
+.section-3{
+	width: 100%;
+	max-width: 100%;
+	border: 0px solid blue;
+	margin-top: 160px;
+	position: relative;
+}
+.section-3 .vector-8{
+	position: absolute;
+	top: -160px;
+}
+.section-3 .part{
+	border: 0px solid red;
+	width: 100%;
+	height: 90vh;
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	position: relative;
+
+	margin-bottom: 5vh;
+}
+.section-3 .our-journey.part{
+	position: relative;
+}
+
+.section-3 .part .bg{
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	z-index: -5;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	
+}
+
+.section-3 .part .bg img{
+	object-fit: cover;
+	position: absolute;
+	object-position: center;
+	min-width: 100%;
+	width: 100%;
+	min-height: 100%;
+	opacity: 30%;
+	z-index: -1;
+}
+
+.section-3 .part .bg .shadow{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, #0F0D09 0%, rgba(0, 0, 0, 0) 53.96%, #0F0D09 98.75%);
+	z-index: ;
+	border: 0px solid pink;
+}
+
+.section-3 .part .content{
+	width: 50%;
+}
+
+.section-3 .our-journey.part .content{
+	text-align: right;
+}
+
+.section-3 .part .content .heading{
+	color: #ffffff;
+	height: 3rem;
+	width: 100%;
+	max-width: 76rem;
+	/* margin-left: 80px; */
+	/* margin-right: auto; */
+	font-family: "Island Moments", cursive;
+	font-size: 4.5rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
+}
+
+.section-3 .part .content .text{
+	font-size: 20px;
+	/* max-width: 40%; */
+	color: var(--grey);
+	margin-top: 50px;
+}
+
+.section-3 .part .image{
+	border: 0px solid yellow;
+
+	width: 30%;
+	overflow: hidden;
+}
+.section-3 .part .image img{
+	width: 100%;
+
+}
+
+.section-3 .our-journey.part .vector-4{
+	position: absolute;
+
+	top: -150px;
+	left: 160px;
+	right: 160px;
+	width: calc(100% - 480px);
+	height: 50vh;
+}
+.section-3 .our-journey.part .vector-5{
+	position: absolute;
+	bottom: -160px;
+	left: 160px;
+	right: 160px;
+	width: calc(100% - 480px);
+	height: 50vh;
+}
 @keyframes tagline-container-animation {
 	0% {
 		display: flex;
