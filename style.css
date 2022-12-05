@@ -498,9 +498,10 @@ body {
 .section-3 .part .image{
 	border: 0px solid yellow;
 
-	width: 30%;
+	width: 40%;
 	overflow: hidden;
 }
+
 .section-3 .part .image img{
 	width: 100%;
 
@@ -515,6 +516,7 @@ body {
 	width: calc(100% - 480px);
 	height: 50vh;
 }
+
 .section-3 .our-journey.part .vector-5{
 	position: absolute;
 	bottom: -160px;
@@ -523,6 +525,7 @@ body {
 	width: calc(100% - 480px);
 	height: 50vh;
 }
+
 @keyframes tagline-container-animation {
 	0% {
 		display: flex;
