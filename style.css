@@ -525,13 +525,54 @@ body {
 	width: calc(100% - 480px);
 	height: 50vh;
 }
+.section-4 {
+	color: white;
 
+}
+
+.section-4 ::-webkit-scrollbar {
+	display: none;
+	width: 0px;
+	height: 0px;
+}
+
+.vibe_gallery_1 {
+	display: flex;
+	justify-content: center;
+	overflow-x: scroll;
+	padding: 2rem;
+	max-width: 1200px;
+	margin: 0 auto auto;
+}
+
+.gallery_1_image {
+	padding: 1vh;
+	height: 300px;
+	width: 500px;
+	border-radius: 1rem;
+	animation: gallery_1_image ease-in-out 15s infinite;
+}
 .section-5{
 	width: 100%;
 	max-width: 100%;
 	border: 0px solid red;
 	position: relative;
 	margin: 100px 0;
+}
+.vibe_header{
+		color: #ffffff;
+			height: 3rem;
+			/* width: 1 */
+			/* max-width: 76rem; */
+			/* margin-left: 80px; */
+			/* margin-right: auto; */
+			font-family: "Island Moments", cursive;
+			font-size: 4.5rem;
+			font-weight: 500;
+			margin-bottom: 5rem;
+			margin-left: 80px;
+
+            
 }
 .section-5 .box-top{
 	width: 100%;
