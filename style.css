@@ -24,7 +24,62 @@
 	--secondary: #ff4d00;
 	--grey: #c8c8c8;
 }
+html{
+	transition: 0.5s all;
+	scroll-behavior: smooth;
+	
+}
+.back-to-top{
+	border: 0px solid yellow;
+	width: fit-content;
 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+
+	position: fixed;
+	bottom: 30px;
+	right: 10px;
+
+	cursor: pointer;
+}
+.back-to-top .text{
+	transform: rotate(90deg);
+	/* text-orientation: sideways-right; */
+	border: 0px solid blue;
+	color: white;
+	padding: 15px 0px;
+}
+
+.back-to-top .arrow{
+    color: white;
+    /* background-color: white; */
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border: 0px solid red;
+	transition: 0.25s all;
+	padding: 10px;
+}
+.back-to-top .arrow .line{
+    background-color: white;
+    height: 20px;
+    width: 2px;
+    transform: translateY(-13px);
+	transition: 0.25s all;
+	border: 0px solid red;
+}
+.back-to-top .arrow .chevron{
+    /* transform: rotate(-90deg); */
+	font-weight: 100;
+	border: 0px solid pink;
+}
+.back-to-top:hover .arrow .line{
+    height: 40px;
+}
 .colored {
 	background: linear-gradient(
 		275.05deg,
