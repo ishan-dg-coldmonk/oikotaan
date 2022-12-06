@@ -875,6 +875,20 @@ footer .credit{
 	left: 50%;
 	transform: translateX(-50%);
 }
+::-webkit-scrollbar {
+	width: 5px;
+	background-color: transparent;
+	margin-left: 5px;
+	padding: 5px;
+	border: 0px solid red;
+}
+::-webkit-scrollbar-thumb{
+	background-color: rgba(255, 255, 255, 0.258);
+	border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(255, 255, 255, 0.46);
+}
 @keyframes tagline-container-animation {
 	0% {
 		display: flex;
