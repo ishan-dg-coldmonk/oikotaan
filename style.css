@@ -165,7 +165,7 @@ body {
 	align-items: center;
 	justify-self: center;
 
-	border: 0px solid blue;
+	border: 1px solid blue;
 	width: 150px;
 	height: 150px;
 	padding-left: 40px;
@@ -175,7 +175,7 @@ body {
 }
 
 .section-1 .logo-tagline .logo-container .logo {
-	border: 0px solid green;
+	border: 1px solid green;
 	width: 150px;
 	height: 150px;
 	/* transition: 0.5s all */
@@ -525,6 +525,149 @@ body {
 	width: calc(100% - 480px);
 	height: 50vh;
 }
+
+.section-5{
+	width: 100%;
+	max-width: 100%;
+	border: 0px solid red;
+	position: relative;
+	margin: 100px 0;
+}
+.section-5 .box-top{
+	width: 100%;
+	height: 50px;
+	background: #0F0D09;
+	box-shadow: 0px 20px 50px 30px #0F0D09, 0px -10px 50px 20px #0F0D09;
+	z-index: 1;
+	border: 0px solid blue;
+}
+.section-5 .box-bottom{
+	width: 100%;
+	height: 50px;
+	background: #0F0D09;
+	box-shadow: 0px -20px 50px 30px #0F0D09, 0px 10px 50px 20px #0F0D09;
+	z-index: 1;
+	border: 0px solid blue;
+}
+.section-5 .main{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 400px;
+	border: 0px solid blue;
+}
+.section-5 .main .fire{
+	width: 200%;
+	border: 0px solid red;
+	z-index: -5;
+}
+.section-5 .main .fire img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	min-height: 100%;
+	max-height: 100%;
+}
+.section-5 .main .content{
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 01);
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: -1;
+	/* border: 1px solid red; */
+}
+.section-5 .main .content .text{
+	position: relative;
+}
+.section-5 .main .content .text::before{
+	content: "''";
+	position: absolute;
+	top: -60px;
+	left: 0px;
+	color: white;
+	border: 0px solid red;
+	z-index: 5;
+	font-size: 100;
+	font-family: "Island Moments", cursive;
+}
+.section-5 .main .content .person{
+	font-size: 40;
+	font-family: "Island Moments", cursive;
+	margin-top: 10px;
+}
+.section-5 .vector-2{
+	position: absolute;
+	left: 160px;
+	top: -250px;
+	width: calc(50% - 160px);
+	height: 20rem;
+	z-index: -5;
+}
+.section-5 .vector-1{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -250px;
+	/* width: calc(50% - 160px); */
+	height: 20rem;
+	z-index: -5;
+}
+
+/* section-6 */
+
+.section-6{
+	width: 100%;
+	border: 0px solid red;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 250px;
+}
+.section-6 .heading{
+	color: #ffffff;
+	height: 3rem;
+	/* width: 1 */
+	/* max-width: 76rem; */
+	/* margin-left: 80px; */
+	/* margin-right: auto; */
+	font-family: "Island Moments", cursive;
+	font-size: 4.5rem;
+	font-weight: 500;
+	margin-bottom: 5rem;
+}
+.section-6 .content{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	padding: 0 160px;
+}
+.section-6 .content .item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border: 0px solid red;
+	padding: 10px;
+	width: 10%;
+}
+.section-6 .content .item img{
+	width: 100%;
+}
+
 
 @keyframes tagline-container-animation {
 	0% {
