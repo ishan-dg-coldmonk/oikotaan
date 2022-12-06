@@ -826,6 +826,55 @@ body {
 	color: #0F0D09;
 	margin-top: 50px;
 }
+
+footer{
+	width: 100%;
+	height: 250px;
+	background-color: black;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+footer .main{
+	padding: 80px;
+	color: white;
+}
+footer .main .title{
+	font-family: "MulgraveW00";
+	font-size: 30px;
+	font-feature-settings: "ss01" on, "salt" on, "fina" on, "ss02" on, "ordn" on;
+	color: white;
+	width: fit-content;
+}
+footer .main .socials{
+	padding: 10px;
+}
+footer .main .socials i{
+	font-size: 20px;
+	padding: 10px;
+}
+footer .main .copyright{
+	color: var(--grey);
+	font-size: 12px;
+}
+footer .icons{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	gap: 50px;
+}
+footer .credit{
+	color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+}
 @keyframes tagline-container-animation {
 	0% {
 		display: flex;
