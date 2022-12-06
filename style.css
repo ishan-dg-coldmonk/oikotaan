@@ -720,6 +720,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin-top: 250px;
+	position: relative;
 }
 .section-6 .heading {
 	color: #ffffff;
@@ -754,7 +755,77 @@ body {
 .section-6 .content .item img {
 	width: 100%;
 }
+.section-6 .vector-6{
+	position: absolute;
+	bottom: -150px;
+	left: 50%;
+	transform: translateX(-50%);
+}
 
+/* SECTION 7 */
+
+.section-7{
+	border: 0px solid red;
+	width: 100%;
+	height: 100vh;
+	margin-top: 150px;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.section-7 .bg{
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	z-index: -5;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	border: 0px solid green;
+}
+.section-7 .bg img{
+	object-fit: cover;
+	position: absolute;
+	object-position: center;
+	min-width: 100%;
+	width: 100%;
+	min-height: 100%;
+	
+	/* z-index: -1; */
+}
+.section-7 .shadow{
+	position: absolute;
+	z-index: -4;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+
+	background: linear-gradient(180deg, #0F0D09 0%, rgba(0, 0, 0, 0) 100%);
+	width: 100%;
+	height: 100%;
+	border: 0px solid blue;
+}
+.section-7 .content{
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.section-7 .content .text{
+	text-align: center;
+	font-size: 80px;
+	color: white;
+}
+.section-7 .content .button{
+	background: white;
+	color: #0F0D09;
+	margin-top: 50px;
+}
 @keyframes tagline-container-animation {
 	0% {
 		display: flex;
