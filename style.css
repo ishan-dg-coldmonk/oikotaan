@@ -44,6 +44,7 @@ html{
 
 	cursor: pointer;
 	z-index: 10000;
+	border: 0px solid red;
 }
 .back-to-top .text{
 	transform: rotate(90deg);
