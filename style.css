@@ -607,15 +607,18 @@ body {
 	width: 100%;
 	border: 0px solid red;
 	position: relative;
-	margin-top: 200px;
+	margin-top: 220px;
 }
 .section-4 .vector-8{
 	position: absolute;
-	top: -320px;
+	bottom: -220px;
+	left: 50%;
+	transform: translate(-50%);
 }
 .section-4 .content .vibe_header {
 	color: #ffffff;
-	height: 3rem;
+	/* height: 3rem; */
+	width: fit-content;
 	/* width: 1 */
 	/* max-width: 76rem; */
 	/* margin-left: 80px; */
@@ -623,10 +626,11 @@ body {
 	font-family: "Island Moments", cursive;
 	font-size: 4.5rem;
 	font-weight: 500;
-	margin-bottom: 3rem;
-	margin-left: 3rem;
+	margin-bottom: 2rem;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	border: 0px solid green;
 }
-
 .section-4 .content .vibe_images {
 	border: 0px solid green;
 	width: 100%;
@@ -665,7 +669,6 @@ body {
 	border: 0px solid purple;
 	transition: 0.5s all;
 }
-
 .section-4 .content .vibe_images .vibe_gallery_1 .img-container .gallery_1_image:hover{
 	transform: scale(1.5);
 	transform-origin: center;
@@ -685,7 +688,7 @@ body {
 	max-width: 100%;
 	border: 0px solid red;
 	position: relative;
-	margin: 280px 0;
+	margin: 150px 0;
 }
 .section-5 .box-top {
 	width: 100%;
