@@ -1417,9 +1417,56 @@ only screen and (max-device-width: 480px){
 	.section-3 .part .image{
 		width: 80%;
 	}
+	/* SECTION 4 */
+	.section-4 .vector-8{
+		display: none;
+	}
+	.section-4 .content .vibe_header{
+		width: 100%;
+		text-align: center;
+		font-size: 50px;
+	}
+	.section-4 .content .vibe_images{
+		padding: 0 1rem;
+	}
 
+	/* SECTION 6 */
+	.section-6 .heading{
+		font-size: 50px;
+	}
+	.section-6 .content{
+		padding: 0 20px;
+	}
+	.section-6 .content .item{
+		width: 30%;
+		padding: 20px;
+	}
+
+
+	/* SECTION 7 */
 	.section-7 .content .text{
 		font-size: 50px;
+	}
+	/* SECTION 8  */
+	.section-8{
+		margin-top: 100px;
+	}
+	.section-8 .vector-2{
+		display: none;
+	}
+	.section-8 .heading{
+		font-size: 50px;
+		border: 0px solid red;
+		width: 100%;
+		text-align: center;
+	}
+	.section-8 .content{
+		flex-direction: column;
+	}
+	.section-8 .content .item{
+		max-width: 80%;
+		margin-top: 75px;
+		margin-bottom: 100px;
 	}
 	footer{
 		max-width: 100vw;
