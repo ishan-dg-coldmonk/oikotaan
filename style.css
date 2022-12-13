@@ -724,13 +724,28 @@ body {
 }
 .section-5 .main {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	width: 100%;
 	height: 600px;
 	border: 0px solid blue;
 	position: relative;
+}
+.section-5 .main .heading{
+	color: #ffffff;
+	/* height: 3rem; */
+	width: fit-content;
+	/* width: 1 */
+	/* max-width: 76rem; */
+	/* margin-left: 80px; */
+	/* margin-right: auto; */
+	font-family: "Island Moments", cursive;
+	font-size: 4.5rem;
+	font-weight: 500;
+	margin-bottom: 0rem;
+	border: 0px solid green;
+	margin-top: 10px;
 }
 .section-5 .main .fire {
 	width: 50%;
@@ -760,35 +775,54 @@ body {
 	font-size: 15px;
 	background-color: rgba(0, 0, 0, 0);
 	height: 100%;
-	padding: 40px 0;
+	padding: 0px 0;
 
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	gap: 10px;
 	z-index: -1;
 	border: 0px solid red;
 
 }
 .section-5 .main .content .text {
 	position: relative;
-	max-width: 50%;
-	border: 0px solid red;
+	max-width: 30%;
+	border: 1px solid white;
 	padding: 20px;
 	font-style: italic;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-.section-5 .main .content .text.left{
+.section-5 .main .content .text .img{
+	width: 50%;
+	height: 50%;
+	margin-bottom: 10px;
+}
+.section-5 .main .content .text .img img{
+	width: 100%;
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+}
+/* .section-5 .main .content .text.left{
 	text-align: left;
 	transform: translateX(-30%);
 }
 .section-5 .main .content .text.right{
 	text-align: left;
 	transform: translateX(+30%);
-}
+} */
 /* .section-5 .main .content .text::before {
 	content: "''";
 	position: absolute;
-	top: -30px;
+	top: -0px;
 	left: 0px;
 	color: white;
 	border: 0px solid red;
@@ -797,9 +831,9 @@ body {
 	font-family: "Island Moments", cursive;
 } */
 .section-5 .main .content .person {
-	font-size: 20;
+	font-size: 30;
 	font-family: "Island Moments", cursive;
-	margin-top: 00px;
+	margin-top: 0px;
 	text-align: right;
 	font-weight: 500;
 }
