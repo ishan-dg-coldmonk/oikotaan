@@ -498,6 +498,7 @@ body {
 	left: 160px;
 	width: calc(50% - 160px);
 	height: 300px;
+	z-index: 2;
 }
 .section-3 .part {
 	border: 0px solid red;
@@ -548,7 +549,7 @@ body {
 		rgba(0, 0, 0, 0) 53.96%,
 		#0f0d09 98.75%
 	);
-	z-index: ;
+	z-index: 1;
 	border: 0px solid pink;
 }
 
@@ -601,6 +602,7 @@ body {
 	right: 160px;
 	width: calc(100% - 480px);
 	height: 50vh;
+	z-index: 5;
 }
 
 .section-3 .our-journey.part .vector-5 {
@@ -610,6 +612,7 @@ body {
 	right: 160px;
 	width: calc(100% - 480px);
 	height: 50vh;
+	z-index: 5;
 }
 
 /* section 4 */
@@ -626,6 +629,7 @@ body {
 	bottom: -220px;
 	left: 50%;
 	transform: translate(-50%);
+	z-index: 2;
 }
 .section-4 .content .vibe_header {
 	color: #ffffff;
@@ -707,7 +711,7 @@ body {
 	height: 50px;
 	background: #0f0d09;
 	box-shadow: 0px 20px 50px 30px #0f0d09, 0px -10px 50px 20px #0f0d09;
-	z-index: 1;
+	z-index: 3;
 	border: 0px solid blue;
 }
 .section-5 .box-bottom {
@@ -715,7 +719,7 @@ body {
 	height: 50px;
 	background: #0f0d09;
 	box-shadow: 0px -20px 50px 30px #0f0d09, 0px 10px 50px 20px #0f0d09;
-	z-index: 1;
+	z-index: 3;
 	border: 0px solid blue;
 }
 .section-5 .main {
@@ -805,7 +809,7 @@ body {
 	top: -250px;
 	width: calc(50% - 160px);
 	height: 20rem;
-	z-index: -5;
+	z-index: 2;
 }
 .section-5 .vector-1 {
 	position: absolute;
@@ -814,7 +818,7 @@ body {
 	bottom: -250px;
 	/* width: calc(50% - 160px); */
 	height: 20rem;
-	z-index: -5;
+	z-index: 2;
 }
 
 /* section-6 */
