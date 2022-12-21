@@ -730,7 +730,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	height: 600px;
+	height: 700px;
 	border: 0px solid blue;
 	position: relative;
 }
@@ -776,8 +776,8 @@ body {
 	text-align: center;
 	font-size: 15px;
 	background-color: rgba(0, 0, 0, 0);
-	height: 100%;
-	padding: 0px 0;
+	height: 500px;
+	padding: 20px 0;
 
 	display: flex;
 	flex-direction: row;
@@ -799,6 +799,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	height: 100%;
 }
 .section-5 .main .content .text .img{
 	width: 50%;
@@ -1039,6 +1040,11 @@ body {
 	font-size: 15px;
 
 }
+.section-8 .content .item .extra{
+	color: grey;
+	font-style: italic;
+	padding: 10px 0;
+}
 .section-8 .button{
 	margin: 20px 0 10px 0;
 	background: white;
@@ -1078,8 +1084,13 @@ footer .main .socials a{
 footer .main .socials i{
 	font-size: 20px;
 	padding: 10px;
+	transition: 0.3s all;
+}
+footer .main .socials i:hover{
+	color: #fcce76;
 }
 footer .main .copyright{
+	padding-top: 10px;
 	color: var(--grey);
 	font-size: 12px;
 }
