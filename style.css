@@ -584,6 +584,19 @@ body {
 	margin-top: 50px;
 }
 
+.section-3 .part .content .image {
+	border: 0px solid yellow;
+
+	width: 40%;
+	overflow: hidden;
+	z-index: 1;
+	display: none;
+}
+
+.section-3 .part .content .image img {
+	width: 100%;
+}
+
 .section-3 .part .image {
 	border: 0px solid yellow;
 
@@ -1473,8 +1486,13 @@ only screen and (max-device-width: 480px){
 		font-size: 15px;
 		width: 100%;
 	}
+	.section-3 .part .content .image{
+		display: unset;
+		width: 100%;
+	}
 	.section-3 .part .image{
 		width: 80%;
+		display: none;
 	}
 	/* SECTION 4 */
 	.section-4 .vector-8{
