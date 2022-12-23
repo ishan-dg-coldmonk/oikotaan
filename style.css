@@ -704,7 +704,7 @@ body {
 .section-5 {
 	width: 100%;
 	max-width: 100%;
-	border: 0px solid red;
+	border: 0px solid greenyellow;
 	position: relative;
 	margin: 150px 0;
 }
@@ -1494,6 +1494,7 @@ only screen and (max-device-width: 480px){
 	}
 	.section-5 .main{
 		height: fit-content;
+		/* height: ; */
 	}
 	.section-5 .main .fire.left img{
 		object-position: right;
@@ -1510,6 +1511,8 @@ only screen and (max-device-width: 480px){
 	.section-5 .main .content{
 		flex-direction: column;
 		padding: 50px 0;
+		height: fit-content;
+		height: -webkit-fit-content;
 	}
 	.section-5 .main .content .text{
 		width: 80%;
