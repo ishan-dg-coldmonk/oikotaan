@@ -49,3 +49,8 @@ const moveRight = () => {
 	// console.log(gallery2.style.marginLeft);
 	// gallery.style.border = "2px solid red";
 };
+
+document.getElementById("registerLink").addEventListener("click", (e) => {
+    e.preventDefault();
+    window.location.href = "register.html";
+});
