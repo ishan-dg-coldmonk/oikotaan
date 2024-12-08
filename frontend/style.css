@@ -414,7 +414,8 @@ body {
 	width: calc(50% - 160px);
 	height: 16rem;
 	left: 9rem;
-	margin-left: 160px;
+	/* margin-left: 160px; */
+	margin-left: 240px;
 }
 
 /* SECTION 2 */
