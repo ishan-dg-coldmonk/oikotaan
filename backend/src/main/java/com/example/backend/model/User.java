@@ -4,28 +4,29 @@ public class User {
     private String email;
     private String type;
     private String name;
+    private String leaderName;
     private String phoneNumber;
     private String city;
-    private String members;
+    private String details;
     private String accommodationRequired;
-    private String videoLink;
-    private String lyricsLink;
+    private String driveLink;
 
     public User() {}
 
-    public User(String email, String type, String name, String phoneNumber, String city, String members,
-                String accommodationRequired, String videoLink, String lyricsLink) {
+    public User(String email, String type, String name, String leaderName, String phoneNumber, String city,
+                String details, String accommodationRequired, String driveLink) {
         this.email = email;
         this.type = type;
         this.name = name;
+        this.leaderName = leaderName;
         this.phoneNumber = phoneNumber;
         this.city = city;
-        this.members = members;
+        this.details = details;
         this.accommodationRequired = accommodationRequired;
-        this.videoLink = videoLink;
-        this.lyricsLink = lyricsLink;
+        this.driveLink = driveLink;
     }
 
+    // Getters and Setters
     public String getEmail() {
         return email;
     }
@@ -50,6 +51,14 @@ public class User {
         this.name = name;
     }
 
+    public String getLeaderName() {
+        return leaderName;
+    }
+
+    public void setLeaderName(String leaderName) {
+        this.leaderName = leaderName;
+    }
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -66,12 +75,12 @@ public class User {
         this.city = city;
     }
 
-    public String getMembers() {
-        return members;
+    public String getDetails() {
+        return details;
     }
 
-    public void setMembers(String members) {
-        this.members = members;
+    public void setDetails(String details) {
+        this.details = details;
     }
 
     public String getAccommodationRequired() {
@@ -82,19 +91,11 @@ public class User {
         this.accommodationRequired = accommodationRequired;
     }
 
-    public String getVideoLink() {
-        return videoLink;
+    public String getDriveLink() {
+        return driveLink;
     }
 
-    public void setVideoLink(String videoLink) {
-        this.videoLink = videoLink;
-    }
-
-    public String getLyricsLink() {
-        return lyricsLink;
-    }
-
-    public void setLyricsLink(String lyricsLink) {
-        this.lyricsLink = lyricsLink;
+    public void setDriveLink(String driveLink) {
+        this.driveLink = driveLink;
     }
 }

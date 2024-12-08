@@ -14,19 +14,18 @@ public class RegisterRepository {
     private JdbcTemplate jdbcTemplate;
 
     public void saveUser(User user, String regId, LocalDateTime timestamp) {
-        String sql = "INSERT INTO registrants (reg_id, email, type, name, phone_number, city, members, accommodation_required, video_link, lyrics_link, timestamp) " +
+        String sql = "INSERT INTO registrants (reg_id, email, type, name, leader_name, phone_number, city, details, accommodation_required, drive_link, timestamp) " +
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-        jdbcTemplate.update(sql, regId, user.getEmail(), user.getType(), user.getName(), user.getPhoneNumber(),
-                user.getCity(), user.getMembers(), Boolean.parseBoolean(user.getAccommodationRequired()),
-                user.getVideoLink(), user.getLyricsLink(), timestamp);
+        jdbcTemplate.update(sql, regId, user.getEmail(), user.getType(), user.getName(), user.getLeaderName(),
+                user.getPhoneNumber(), user.getCity(), user.getDetails(),
+                user.getAccommodationRequired(), user.getDriveLink(), timestamp);
     }
 
     public void updateUser(User user, String regId) {
-        String sql = "UPDATE registrants SET type = ?, name = ?, phone_number = ?, city = ?, members = ?, accommodation_required = ?, video_link = ?, lyrics_link = ? " +
+        String sql = "UPDATE registrants SET type = ?, name = ?, leader_name = ?, phone_number = ?, city = ?, details = ?, accommodation_required = ?, drive_link = ? " +
                 "WHERE reg_id = ?";
-        jdbcTemplate.update(sql, user.getType(), user.getName(), user.getPhoneNumber(), user.getCity(),
-                user.getMembers(), Boolean.parseBoolean(user.getAccommodationRequired()), user.getVideoLink(),
-                user.getLyricsLink(), regId);
+        jdbcTemplate.update(sql, user.getType(), user.getName(), user.getLeaderName(), user.getPhoneNumber(),
+                user.getCity(), user.getDetails(), user.getAccommodationRequired(), user.getDriveLink(), regId);
     }
 
     public String findRegIdByEmail(String email) {

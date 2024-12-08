@@ -37,34 +37,32 @@ public class RegisterService {
 
     private void validateUser(User user) throws Exception {
         if (user.getEmail() == null || user.getEmail().isEmpty() || !user.getEmail().matches("^[A-Za-z0-9+_.-]+@(.+)$")) {
-            throw new Exception("Invalid email");
+            throw new Exception("Email invalid/not entered");
         }
         if (user.getType() == null || user.getType().isEmpty()) {
             throw new Exception("You need to specify whether you are a band or an individual");
         }
         if (user.getName() == null || user.getName().isEmpty()) {
-            throw new Exception("Name cannot be empty");
+            throw new Exception("Band/Individual Name not entered");
         }
         if (user.getPhoneNumber() == null || !user.getPhoneNumber().matches("\\d{10}")) {
-            throw new Exception("Invalid phone number");
+            throw new Exception("Phone number invalid/not entered");
         }
         if (user.getCity() == null || user.getCity().isEmpty()) {
-            throw new Exception("City cannot be empty");
+            throw new Exception("City not entered");
         }
-        if (user.getMembers() == null || user.getMembers().isEmpty()) {
-            throw new Exception("Members List cannot be empty");
+        if (user.getDetails() == null || user.getDetails().isEmpty()) {
+            throw new Exception("Instrument details/Band member details not entered");
         }
         if (user.getAccommodationRequired() == null || (!user.getAccommodationRequired().equalsIgnoreCase("yes")
                 && !user.getAccommodationRequired().equalsIgnoreCase("no"))) {
             throw new Exception("You need to specify whether you need accommodation");
         }
-        if (user.getVideoLink() == null || user.getVideoLink().isEmpty()) {
-            throw new Exception("No video link entered");
-        }
-        if (user.getLyricsLink() == null || user.getLyricsLink().isEmpty()) {
-            throw new Exception("No lyrics link entered");
+        if (user.getDriveLink() == null || user.getDriveLink().isEmpty()) {
+            throw new Exception("Drive link not provided");
         }
     }
+
 
     private String generateRegId() {
         int currentCount = registerRepository.getUserCount();
