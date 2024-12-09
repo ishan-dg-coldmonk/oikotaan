@@ -13,12 +13,10 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://127.0.0.1") // Allows all ports on 127.0.0.1
-                        .allowedOriginPatterns("http://127.0.0.1:*") // Spring Boot 2.4+ supports patterns
-                        .allowedMethods("GET", "POST", "PUT", "DELETE")
-                        .allowedHeaders("*")
-                        .allowCredentials(true);
-
+                        .allowedOrigins("*") // Allow all origins
+                        .allowedMethods("GET", "POST", "PUT", "DELETE") // Specify allowed methods
+                        .allowedHeaders("*") // Allow all headers
+                        .allowCredentials(false); // Disable credentials for security
             }
         };
     }

@@ -38,7 +38,7 @@ public class EmailService {
 
             String htmlContent = "<html><body style='font-family: Arial, sans-serif; color: #333;'>"
                     + "<div style='text-align: center; padding: 10px;'>"
-                    + "<img src='cid:eventLogo' alt='Event Logo' style='width: 180px; height: 200px; margin: 0px'/>"
+                    + "<img src='cid:eventLogo' alt='Event Logo' style='width: 180px; height: 160px; margin: 0px'/>"
                     + "</div>"
                     + "<h2 style='text-align: center; color: #4CAF50;'>Greetings from Team Euphony Oikotaan!</h2>"
                     + "<p>Hi <b>" + bandName + "</b>,</p>"
@@ -56,8 +56,8 @@ public class EmailService {
                     + "<p style='text-align: center; color: #777;'><i>Welcome to the Oikotaan Family!</i></p>"
                     + "<p style='text-align: left;'><b>- Team Euphony Oikotaan</b></p>"
                     + "<div style='text-align: left; padding: 10px;'>"
-                    + "<img src='cid:euphonyLogo' alt='Euphony Logo' style='width: 80px; height: 100px; margin: 2px'/>"
-                    + "<img src='cid:iiestLogo' alt='IIEST Logo' style='width: 80px; height: 100px; margin: 2px'/>"
+                    + "<img src='cid:euphonyLogo' alt='Euphony Logo' style='width: 120px; height: 140px; margin: 5px'/>"
+                    + "<img src='cid:iiestLogo' alt='IIEST Logo' style='width: 120px; height: 140px; margin: 5px'/>"
                     + "</div>"
                     + "</body></html>";
 
@@ -65,9 +65,9 @@ public class EmailService {
             helper.setText(htmlContent, true);
 
             // Add inline
-            Resource euphonyLogo = new ClassPathResource("static/euphony-logo.png");
+            Resource euphonyLogo = new ClassPathResource("static/euphony-logo-white.png");
             helper.addInline("euphonyLogo", euphonyLogo.getFile());
-            Resource iiestLogo = new ClassPathResource("static/iiest-logo.png");
+            Resource iiestLogo = new ClassPathResource("static/iiest-white.png");
             helper.addInline("iiestLogo", iiestLogo.getFile());
             Resource eventLogo = new ClassPathResource("static/fest-logo.jpg");
             helper.addInline("eventLogo", eventLogo.getFile());
