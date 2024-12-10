@@ -42,7 +42,10 @@ body{
     margin: 0 auto;
     -webkit-user-select: none;
     user-select: none;
+    animation: pageAnimate 0.3s ease-out;
 }
+
+
 
 main {
     display: grid;
@@ -680,7 +683,7 @@ ol li {
   }
   
   /* Popup Overlay */
-.rules-popup {
+  .rules-popup {
     display: none; /* Initially hidden */
     position: fixed;
     top: 0;
@@ -692,7 +695,7 @@ ol li {
     justify-content: center;
     align-items: center;
 }
-/* Popup Content */
+
 /* Popup Content */
 .rules-popup-content {
     background: linear-gradient(135deg, #1f1f1f, #121212, #000000); /* Darker gradient towards black */
@@ -705,14 +708,27 @@ ol li {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Strong shadow for depth */
     color: #f8f9fa; /* Light text for contrast */
     font-family: 'Roboto', sans-serif; /* Clean and modern font */
+    animation: fadeIn 0.5s ease-in-out;
     font-size: 16px;
     line-height: 1.6;
-    animation: fadeIn 0.5s ease-in-out;
-    /* background-image: url('./assests/images/home-img-2.png'); /* Optional background image */
-    /* background-size: cover;
-    background-position: center;
-    background-clip: padding-box; */
     overflow-y: auto; /* Enable vertical scrolling */
+    text-align: justify; /* Align text properly */
+    letter-spacing: 0.5px; /* Slight letter-spacing for improved readability */
+}
+
+.criteria-list {
+    padding-left: 15px;
+    padding-right: 25px; /* Reduced indentation */
+    line-height: 1.8;
+    margin-bottom: 20px; /* Adds space after the list */
+}
+
+.sub-head{
+    padding-left: 20px;
+}
+
+#rules-reg{
+    padding-left: 10px;
 }
 
 /* Custom Scrollbar Styles */
@@ -745,6 +761,8 @@ ol li {
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); /* Glow effect for emphasis */
 }
 
+
+
 #after{
     text-align: center;
     font-size: 18px;
@@ -767,7 +785,9 @@ ol li {
     color: #e9c46a;
 }
 
-
+.list-bold{
+    color: #f9e1a6;
+}
 
 /* Close Button */
 .close-btn {
@@ -815,3 +835,82 @@ ol li {
         transform: scale(1);
     }
 }
+
+@media only screen and (max-width: 600px) and (max-height: 1100px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .wrapper {
+        padding: 6vh 7vw;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .th-logo {
+        width: 80px;
+        margin: 12px 24px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .input-field {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .input-box input, .input-box textarea {
+        font-size: 0.75rem;
+        padding: 0 30px 0 5px;
+    }
+
+    .progressbar {
+        width: 100%;
+    }
+
+    .progress-step {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .band-leader-box1, .band-leader-box2 {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .register-link {
+        font-size: 0.8em;
+    }
+
+    .blob {
+        width: 400px;
+        height: 400px;
+    }
+
+    .tooltip:after {
+        width: 200px;
+        font-size: 10px;
+    }
+
+    .submit-box{
+        margin-top: 5px;
+    }
+
+    .rules-popup-content{
+
+    }
+}
+
+
+
+
+
+

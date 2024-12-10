@@ -452,6 +452,36 @@ body {
 	overflow: hidden;
 }
 
+@media only screen and (max-width: 600px) {
+    .part.part-2 .content {
+        grid-template-columns: 1fr; /* Stacks the grid vertically on smaller screens */
+    }
+
+    .image-container {
+        max-width: 170px;
+		margin: 15px 5px;
+    }
+
+    .image_name {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1440px) {
+    .part.part-2 .content {
+        grid-template-columns: repeat(2, 1fr); /* 2x2 grid for medium screens */
+    }
+
+    .image-container {
+		margin: 25px 5px;
+        max-width: 180px;
+    }
+
+    .image_name {
+        font-size: 1rem;
+    }
+}
+
 .section-2 .part .bg img {
 	object-fit: cover;
 	position: absolute;

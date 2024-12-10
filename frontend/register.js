@@ -33,6 +33,8 @@ clearBtns.forEach((btn) => {
 });
 
 
+const BASE_URL = "https://oikotaan7-backend.onrender.com";
+
 submitBtns.forEach((btn) => {
     btn.addEventListener("click", async (event) => {
       event.preventDefault();
@@ -49,7 +51,7 @@ submitBtns.forEach((btn) => {
       const formData = gatherFormData();
   
       try {
-        const response = await fetch("http://localhost:8081/api/register", {
+        const response = await fetch(`${BASE_URL}/api/register`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formData),
@@ -69,6 +71,7 @@ submitBtns.forEach((btn) => {
       }
     });
   });
+
 
 
   function gatherFormData() {
