@@ -836,81 +836,85 @@ ol li {
     }
 }
 
-@media only screen and (max-width: 600px) and (max-height: 1100px) {
+/* General Styles (unchanged from earlier parts) */
+/* ... (Keep your base CSS and other styles here) ... */
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 600px) {
     body {
-        background-size: cover;
-        background-position: center;
+        font-size: 14px;
+        padding: 0 1rem; /* Add padding to prevent edge clipping */
     }
 
     .wrapper {
-        padding: 6vh 7vw;
-        width: auto;
-        margin: 0 auto;
-    }
-
-    .th-logo {
-        width: 80px;
-        margin: 12px 24px;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    .input-field {
-        padding: 0.5rem;
-        font-size: 0.8rem;
-    }
-
-    .input-box input, .input-box textarea {
-        font-size: 0.75rem;
-        padding: 0 30px 0 5px;
+        padding: 2vh 4vw; /* Reduce padding for better mobile fit */
+        width: 100%;
+        border-radius: 0.5rem;
     }
 
     .progressbar {
-        width: 100%;
+        width: 95%; /* Adjust for smaller screens */
     }
 
     .progress-step {
         width: 1.8rem;
         height: 1.8rem;
+        font-size: 0.75rem; /* Smaller steps for compact design */
     }
 
-    .button-group {
-        flex-direction: column;
-        gap: 1.5rem;
+    .custom-prompt {
+        font-size: 0.875rem;
+        padding: 1rem;
+        margin: 1rem;
     }
 
-    .band-leader-box1, .band-leader-box2 {
-        flex-direction: column;
-        gap: 1.5rem;
+    .rules-popup-content {
+        width: 90%; /* Limit popup width on smaller screens */
+        max-height: 70vh; /* Prevent overflowing */
+        padding: 1rem; /* Compact padding */
+        font-size: 0.9rem;
+        overflow-y: auto;
     }
 
-    .register-link {
-        font-size: 0.8em;
+    .rules-popup-content h3 {
+        font-size: 1.2rem; /* Scale down heading */
+    }
+
+    .rules-popup-content p,
+    .rules-popup-content ol li {
+        font-size: 0.875rem;
+        line-height: 1.4;
+    }
+
+    .rules-popup-content ol {
+        margin-left: 1rem;
+        padding-left: 1rem;
+    }
+
+    .button-group,
+    .button-group2 {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem;
+    }
+
+    button {
+        padding: 0.6rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .input-box {
+        margin-bottom: 1rem;
+    }
+
+    textarea,
+    .input-field {
+        font-size: 0.875rem;
+        padding: 0.5rem;
     }
 
     .blob {
-        width: 400px;
-        height: 400px;
-    }
-
-    .tooltip:after {
-        width: 200px;
-        font-size: 10px;
-    }
-
-    .submit-box{
-        margin-top: 5px;
-    }
-
-    .rules-popup-content{
-
+        width: 50vw; /* Smaller decorative blob for compact devices */
+        height: 50vw;
     }
 }
-
-
-
-
-
 
