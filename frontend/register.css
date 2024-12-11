@@ -33,7 +33,7 @@
     font-display: swap;
 }
 body{
-    background: url('assests/images/bgtexture.png');
+    background: url('assests/images/bg_texture_new.webp');
     background-repeat: no-repeat;
     background-size: cover;
     /* overflow: inherit; */

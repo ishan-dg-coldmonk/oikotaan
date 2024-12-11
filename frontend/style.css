@@ -517,6 +517,7 @@ body {
 	padding: 0 0px;
 	width: 100%;
 	z-index: 1;
+	margin-top: 40px;
 }
 
 .section-2 .part .content .image-container {
@@ -526,7 +527,22 @@ body {
 	border: 0px solid pink;
 	overflow: hidden;
 	border-radius: 20px;
+	transition: transform 0.3s ease-in-out;
 }
+
+.section-2 .part .content .image-container:hover {
+    transform:  scale(1.06);
+    transition: transform 0.6s ease-in-out;
+	z-index: 2;
+}
+
+.section-2 .part .content .image-container:hover img {
+    transform: scale(1.1) rotate(1deg);
+    transition: transform 0.6s ease-in-out;
+}
+
+
+
 .section-2 .part.part-1 .content .image-container{
 	width: 100%;
 	max-height: 500px;
@@ -561,10 +577,12 @@ body {
 	border-radius: 0px 0px 15px 15px;
 }
 .section-2 .part.part-1 .content .image-container .img_name_div{
-	font-size: 30px;
+	font-size: 25px;
 	height: 100px;
 	font-weight: 400;
 }
+
+
 
 .section-2 .part .content .image-container .image_Our_guest2 {
 	width: 100%;
@@ -1323,6 +1341,12 @@ footer .credit {
 ::-webkit-scrollbar-thumb:hover {
 	background-color: rgba(255, 255, 255, 0.46);
 }
+
+#create{
+	font-size: 55px;
+}
+
+
 @keyframes tagline-container-animation {
 	0% {
 		display: flex;
@@ -1517,6 +1541,11 @@ footer .credit {
 	100% {
 		opacity: 100;
 	}
+}
+
+#registerLink{
+	width: 193px;
+	text-align: center;
 }
 
 @media only screen and (max-width: 480px),
