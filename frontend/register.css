@@ -130,8 +130,11 @@ h2 {
     animation: animate 0.5s;
 }
 
+/* Specific Fix for Second Page Step */
 .form-box-active {
     display: block;
+    overflow: hidden; /* Prevent overflow */
+    position: relative; /* Ensure content doesn't move with blob */
 }
 
 
@@ -273,15 +276,27 @@ button {
     text-decoration: underline;
 }
 
+/* Blob Animation Fix */
 .blob {
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 50vw; /* Responsive width */
+    height: 50vw; /* Responsive height */
+    max-width: 500px; /* Restrict maximum size */
+    max-height: 500px;
     background: linear-gradient(180deg, rgba(115, 72, 50, .42) 31.77%, #734832 100%);
     border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    transform: translate(-100px, -50px) rotate(-90deg);
-    transition: 1s cubic-bezier(.07, .8, .16, 1);
-    animation: animateBlob 20s infinite alternate;
+    transform: translate(-25%, -25%) rotate(-90deg);
+    animation: animateBlob 6s infinite alternate;
+    z-index: -1; /* Keeps it behind the content */
+    overflow:hidden;
+}
+
+
+@keyframes animateBlob {
+    100% {
+        transform: translate(10%, 10%) rotate(-10deg);
+        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
 }
 
 .blob:hover {
@@ -295,14 +310,6 @@ button {
         inset 300px 300px 0 0 #97512b;
 
 
-}
-
-@keyframes animateBlob {
-    100% {
-        transform: translate(300px, 50px) rotate(-10deg);
-        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-
-    }
 }
 
 
@@ -913,8 +920,11 @@ ol li {
     }
 
     .blob {
-        width: 50vw; /* Smaller decorative blob for compact devices */
-        height: 50vw;
+        width: 70vw; /* Scales for smaller screens */
+        height: 70vw;
+        transform: translate(-15%, -15%) rotate(-45deg); /* Adjusted position */
     }
+
+    
 }
 
