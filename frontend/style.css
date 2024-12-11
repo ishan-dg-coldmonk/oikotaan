@@ -6,13 +6,8 @@
 
 @font-face {
 	font-family: "MulgraveW00";
-	src: url("./assests/fonts/MulgraveW00-Regular.eot");
-	src: local("Mulgrave W00 Regular"), local("MulgraveW00-Regular"),
-		url("./assests/fonts/MulgraveW00-Regular.eot?#iefix")
-			format("embedded-opentype"),
-		url("./assests/fonts/MulgraveW00-Regular.woff2") format("woff2"),
-		url("./assests/fonts/MulgraveW00-Regular.woff") format("woff"),
-		url("./assests/fonts/MulgraveW00-Regular.ttf") format("truetype");
+	src: url("./assests/fonts/MulgraveW00-Regular.woff2") format("woff2"),
+		url("./assests/fonts/MulgraveW00-Regular.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
