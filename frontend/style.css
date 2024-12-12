@@ -1819,3 +1819,9 @@ footer .credit {
 		padding: 0 20px;
 	}
 }
+
+@media (min-width: 400px) and (max-width: 600px){
+    .section-5 .main .heading {
+		font-size: 70px;
+	}
+}
