@@ -1640,13 +1640,14 @@ footer .credit {
 		text-align: center;
 	}
 	.section-2 .part .content {
-		flex-flow: row wrap;
+		display: flex; /* Use flexbox for layout */
+		flex-wrap: wrap; /* Allow wrapping of elements to the next line */
 		justify-content: center;
-		gap: 10px;
+		gap: 20px; /* Increase gap between images */
 	}
 	.section-2 .part .content .image-container {
 		width: 40%;
-		height: 25vh;
+		height: 30vh;
 		border-radius: 20px;
 	}
 	.section-2 .part.part-1 .content .image-container .img_name_div{
@@ -1822,6 +1823,6 @@ footer .credit {
 
 @media (min-width: 400px) and (max-width: 600px){
     .section-5 .main .heading {
-		font-size: 70px;
+		font-size: 80px;
 	}
 }
