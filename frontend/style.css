@@ -908,6 +908,7 @@ body {
 	margin-bottom: 0rem;
 	border: 0px solid green;
 	margin-top: 10px;
+	padding: 0px 26px;
 }
 .section-5 .main .fire {
 	width: 50%;
@@ -1821,8 +1822,23 @@ footer .credit {
 	}
 }
 
-@media (min-width: 400px) and (max-width: 600px){
-    .section-5 .main .heading {
-		font-size: 80px;
+
+
+@media only screen and (max-width: 420px) {
+	.section-2 .part .content .image-container {
+		width: 25%; /* Reduce width slightly */
+		margin: 10px 13px; /* Add side margins for spacing */
+		height: 32vh; /* Adjust height for a balanced look */
+	}
+	.section-5 .main .heading {
+		font-size: 70px;
+	}
+}
+
+@media only screen and (max-width: 370px) {
+	.section-2 .part .content .image-container {
+		width: 48%; /* Increase width */
+		height: 35vh; /* Increase height for prominence */
+		margin-bottom: 30px;
 	}
 }
