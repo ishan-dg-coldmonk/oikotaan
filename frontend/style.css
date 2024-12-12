@@ -894,6 +894,7 @@ body {
 	position: relative;
 }
 .section-5 .main .heading {
+	text-align: center;
 	color: #ffffff;
 	/* height: 3rem; */
 	width: fit-content;
@@ -1709,6 +1710,11 @@ footer .credit {
 		margin: 5%;
 	}
 	/* SECTION 5 */
+
+	.section-5 .main .heading {
+		font-size: 60px;
+	}
+
 	.section-5 .box-top,
 	.section-5 .box-bottom {
 		display: none;

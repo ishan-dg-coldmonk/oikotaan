@@ -514,6 +514,7 @@ legend {
     border-radius: 50%; */
     color: #FFF;
     cursor: pointer;
+    word-wrap: break-word;
 }
 
 .tooltip:before,
@@ -847,8 +848,8 @@ ol li {
 @media (max-width:400px) {
     .tooltip {
         position: relative;
-        left: -25px; 
-        top : -4.5px;
+        left: -85px; 
+        top : -7.0px;
     }
 
     .close-btn{
@@ -856,6 +857,11 @@ ol li {
         width: 24px;
         right: 5px;
         top: 15px;
+    }
+
+    .tooltip:after {
+        width: 145px;
+        /* transform: translateX(-60%) translateY(20%);Keep tooltip centered vertically */
     }
 }
 
@@ -937,5 +943,12 @@ ol li {
         height: 70vw;
         transform: translate(-15%, -15%) rotate(-45deg); 
     }
+    
 }
 
+@media (min-width: 400px) and (max-width: 600px){
+    .tooltip:after {
+        transform: translateX(-60%) translateY(5%);
+        font-size: 13px;
+    }
+}
