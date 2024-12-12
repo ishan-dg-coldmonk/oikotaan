@@ -8,6 +8,4 @@ Disallow: /assets
 Allow: /style.css
 Allow: /sitemap.xml
 
-Disallow: /register.html
-
 Sitemap: https://oikotaan.in/sitemap.xml
