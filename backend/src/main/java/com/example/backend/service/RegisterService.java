@@ -65,7 +65,7 @@ public class RegisterService {
 
 
     private String generateRegId() {
-        int currentCount = registerRepository.getUserCount();
-        return String.format("2025OKTN7%03d", currentCount + 1);
+        int lastId = registerRepository.getRegId();
+        return String.format("2025OKTN7%03d", lastId + 1);
     }
 }

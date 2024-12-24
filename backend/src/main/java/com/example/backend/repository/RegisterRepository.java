@@ -38,10 +38,12 @@ public class RegisterRepository {
         });
     }
 
-
-    public int getUserCount() {
-        String sql = "SELECT COUNT(*) FROM registrants";
-        Integer count = jdbcTemplate.queryForObject(sql, Integer.class);
-        return count != null ? count : 0;
+    public int getRegId() {
+        String sql = "SELECT COALESCE(MAX(reg_id), '2025OKTN7000') FROM registrants";
+        String lastRegId = jdbcTemplate.queryForObject(sql, String.class);
+        if (lastRegId != null && lastRegId.matches("\\d{4}OKTN7\\d{3}")) {
+            return Integer.parseInt(lastRegId.substring(9));
+        }
+        return 0;
     }
 }
