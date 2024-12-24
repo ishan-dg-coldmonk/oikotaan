@@ -33,44 +33,48 @@ clearBtns.forEach((btn) => {
 });
 
 
-const BASE_URL = "https://oikotaan7-backend.onrender.com";
+const BASE_URL = "http://oikotaan-7-server-env.eba-gcd3ryn8.ap-south-1.elasticbeanstalk.com";
 
 submitBtns.forEach((btn) => {
-    btn.addEventListener("click", async (event) => {
+  btn.addEventListener("click", async (event) => {
       event.preventDefault();
-  
-      // Check if all required checkboxes are checked
-      const requiredCheckboxes = document.querySelectorAll("input[type='checkbox'][required]");
-      const allChecked = Array.from(requiredCheckboxes).every((checkbox) => checkbox.checked);
-  
-      if (!allChecked) {
-        showPrompt("Please check all required checkboxes!", "error");
-        return;
-      }
-  
-      const formData = gatherFormData();
-  
+      showLoader(); // Show loader
       try {
-        const response = await fetch(`${BASE_URL}/api/register`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        });
-        const result = await response.json();
-  
-        if (result.status === "OK") {
-          showPrompt(result.message, "success");
-          setTimeout(() => {
-            window.location.href = "index.html"; // Redirect after a short delay
-          }, 1000);
-        } else {
-          showPrompt(result.message, "error");
-        }
+          const requiredCheckboxes = document.querySelectorAll("input[type='checkbox'][required]");
+          const allChecked = Array.from(requiredCheckboxes).every((checkbox) => checkbox.checked);
+
+          if (!allChecked) {
+              showPrompt("Please check all required checkboxes!", "error");
+              hideLoader(); // Hide loader
+              return;
+          }
+
+          const formData = gatherFormData();
+
+          const response = await fetch(`${BASE_URL}/api/register`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(formData),
+          });
+
+          const result = await response.json();
+
+          if (result.status === "OK") {
+              showPrompt(result.message, "success");
+              setTimeout(() => {
+                  window.location.href = "index.html"; // Redirect after a short delay
+              }, 500);
+          } else {
+              showPrompt(result.message, "error");
+          }
       } catch (error) {
-        showPrompt("Failed to connect to the server. Please try again later.", "error");
+          showPrompt("Failed to connect to the server. Please try again later.", "error");
+      } finally {
+          hideLoader(); // Hide loader
       }
-    });
   });
+});
+
 
 
 
@@ -269,3 +273,20 @@ function showPrompt(message, type) {
       });
     }, 3000);
   }
+
+  function showLoader() {
+    const loader = document.createElement("div");
+    loader.id = "loader";
+    loader.innerHTML = `
+        <div class="loader-animation"></div>
+        <p>Please Wait...</p>
+    `;
+    document.body.appendChild(loader);
+}
+
+function hideLoader() {
+    const loader = document.getElementById("loader");
+    if (loader) {
+        loader.remove();
+    }
+}

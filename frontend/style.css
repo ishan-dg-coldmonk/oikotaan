@@ -512,6 +512,7 @@ body {
 	padding: 0 0px;
 	width: 100%;
 	z-index: 1;
+	gap: 27px;
 	margin-top: 40px;
 }
 
