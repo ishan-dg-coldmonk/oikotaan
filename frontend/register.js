@@ -33,7 +33,7 @@ clearBtns.forEach((btn) => {
 });
 
 
-const BASE_URL = "http://oikotaan-7-server-env.eba-gcd3ryn8.ap-south-1.elasticbeanstalk.com";
+const BASE_URL = "https://api.oikotaan.in";
 
 submitBtns.forEach((btn) => {
   btn.addEventListener("click", async (event) => {
@@ -68,6 +68,7 @@ submitBtns.forEach((btn) => {
               showPrompt(result.message, "error");
           }
       } catch (error) {
+          console.log(error);
           showPrompt("Failed to connect to the server. Please try again later.", "error");
       } finally {
           hideLoader(); // Hide loader
