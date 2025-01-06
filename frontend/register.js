@@ -229,31 +229,31 @@ individualRadio.addEventListener("change", toggleSections);
 toggleSections(); // Call the function once to set the initial state
 
 // popup
-document.addEventListener('DOMContentLoaded', () => {
-  const rulesLinks = document.querySelectorAll('.register-link a, .remember-forget a'); // Select both rules links
-  const popup = document.getElementById('rules-popup'); // Popup element
-  const closeBtn = document.querySelector('.close-btn'); // Close button in the popup
+// document.addEventListener('DOMContentLoaded', () => {
+//   const rulesLinks = document.querySelectorAll('.register-link a, .remember-forget a'); // Select both rules links
+//   const popup = document.getElementById('rules-popup'); // Popup element
+//   const closeBtn = document.querySelector('.close-btn'); // Close button in the popup
 
-  // Show the popup
-  rulesLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
-      event.preventDefault(); // Prevent default anchor action
-      popup.style.display = 'flex'; // Show the popup
-    });
-  });
+//   // Show the popup
+//   rulesLinks.forEach(link => {
+//     link.addEventListener('click', (event) => {
+//       event.preventDefault(); // Prevent default anchor action
+//       popup.style.display = 'flex'; // Show the popup
+//     });
+//   });
 
-  // Hide the popup on close button click
-  closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none'; // Hide the popup
-  });
+//   // Hide the popup on close button click
+//   closeBtn.addEventListener('click', () => {
+//     popup.style.display = 'none'; // Hide the popup
+//   });
 
-  // Hide the popup when clicking outside the popup content
-  window.addEventListener('click', (event) => {
-    if (event.target === popup) {
-      popup.style.display = 'none'; // Hide the popup
-    }
-  });
-});
+//   // Hide the popup when clicking outside the popup content
+//   window.addEventListener('click', (event) => {
+//     if (event.target === popup) {
+//       popup.style.display = 'none'; // Hide the popup
+//     }
+//   });
+// });
 
 
 
