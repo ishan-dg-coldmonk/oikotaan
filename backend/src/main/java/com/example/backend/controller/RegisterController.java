@@ -6,10 +6,7 @@ import com.example.backend.service.RegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/register")
@@ -26,5 +23,10 @@ public class RegisterController {
         } catch (Exception e) {
             return new ResponseEntity<>(new ApiResponse(e.getMessage(), HttpStatus.BAD_REQUEST), HttpStatus.BAD_REQUEST);
         }
+    }
+
+    @GetMapping("/test")
+    public ResponseEntity<ApiResponse> testEndpoint() {
+        return new ResponseEntity<>(new ApiResponse("Backend working fine", HttpStatus.OK), HttpStatus.OK);
     }
 }
