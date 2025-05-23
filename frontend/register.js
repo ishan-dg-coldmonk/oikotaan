@@ -33,7 +33,7 @@ clearBtns.forEach((btn) => {
 });
 
 
-const BASE_URL = "https://api.oikotaan.in";
+const BASE_URL = "https://server.oikotaan.in";
 
 submitBtns.forEach((btn) => {
   btn.addEventListener("click", async (event) => {
